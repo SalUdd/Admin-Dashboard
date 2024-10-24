@@ -1,0 +1,121 @@
+
+:root{
+    margin: 0px;
+}
+
+body {
+    margin: 0px;
+    box-sizing: border-box;
+ }
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    height: 100vh;
+    
+
+}
+
+
+.sidebar {
+    background-color: aqua;
+    display: grid;
+    grid-template-rows: 1fr 4fr 4fr;
+}
+
+.sidebarTop, .sidebarMid, .sidebarLast {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    justify-items: center;
+}
+.sidebarTop {
+    background-color: white;
+
+}
+.sidebarMid {
+    background-color: navy;
+}
+.sidebarLast {
+    background-color: purple;
+}
+
+
+.main { 
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+.topbar { 
+    display: grid;
+    grid-template-rows: 1fr 1fr;    
+}
+.searchBar {
+    width: 60%;
+    border-radius: 20px;
+    background-color: grey;
+    border: 0px;
+    height: 35%;
+}
+
+.topDetails, .navbar {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr 1fr 1fr ;
+    align-items: center;
+    justify-items: center;
+}
+
+.topDetails { 
+    background-color: yellow;
+
+}
+
+.navbar { 
+    background-color: orange;
+}
+
+
+.mainBody { 
+    box-sizing: border-box;
+
+    display: grid;
+
+    grid-template-rows: 1fr 11fr;
+    padding: 30px 30px 30px 10px;
+
+}
+
+.mainBodyContainer {
+    background-color: grey;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(150px,1fr));
+    grid-template-rows: repeat(3, minmax(150px,1fr));
+
+}
+
+.title {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.t1 {
+    grid-column: span 2;
+}
+.card  {
+    height: 90%;
+    background-color: aliceblue;
+    border: 2px black solid;
+    gap: 15px;
+}
+
+
+.thirdCard{
+    grid-column: 3;
+    grid-row: 1/ calc(2-.5);
+}
+
+.sixthCard{
+    grid-column: 3;
+    grid-row: 3/calc(5-.5);
+}
