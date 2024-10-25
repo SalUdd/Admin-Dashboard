@@ -37,7 +37,6 @@ body {
 .search-wrapper, .profile-wrapper, .user-welcome, .options-wrapper{
     display: grid;
     align-items: center;
-    
 }
 
 
@@ -55,7 +54,7 @@ body {
 
 .search-wrapper input {
     width: 70%;
-    height: 25%;
+    height: 30%;
     border-radius: 20px;
     border: 0px;
     background-color: rgb(230, 230, 230);
@@ -126,7 +125,6 @@ body {
     font-weight: 600;
     font-size: 1rem;
     transition: all 0.3s ease; /* Add transition for smooth hover effect */
-
 }
 
 .btn-options:hover {
@@ -208,7 +206,7 @@ body {
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: repeat(4, 1fr);
-    padding: 10px 30px 30px 20px;
+    padding: 10px 30px 30px 30px;
     gap: 20px;
     background-color: #e2e5e9;
 }
@@ -248,9 +246,7 @@ body {
     grid-column: 2/3;
     grid-row: 3/6;
     display: grid;
-    grid-template-rows: auto 1fr;
-
-    
+    grid-template-rows: auto 1fr;    
 }
 
 .trending-card {
@@ -274,7 +270,7 @@ body {
     grid-template-columns: auto 2fr;
     grid-template-rows: 1fr;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
 }
 
 .trend-subtext {
@@ -313,7 +309,35 @@ body {
 }
 
 .project-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30px 1fr 30px;
     background-color: white;
     border-radius: 15px;
-    
+    box-shadow: inset 5px 0 0 #fbbf24; /* Initial 'border' color */ 
+    padding: 0px 30px 0px 40px;
+    transition: box-shadow 0.6s ease, transform 0.3s ease;
+
+}
+
+.project-card:hover {
+    transform: scale(1.02);
+    box-shadow: inset 10px 0 0 rgb(32, 24, 14); /* New 'border' color on hover */ 
+}
+
+.project-icons  {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: end;
+}
+
+.project-icons img {
+    height: 30px;
+    width: 30px;
+    margin-top: -20px;
+    transition: all 0.3s ease; /* Add transition for smooth hover effect */
+}
+
+.project-icons img:hover {
+    transform: scale(1.1);
 }
